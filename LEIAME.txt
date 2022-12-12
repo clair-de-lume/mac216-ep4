@@ -11,11 +11,27 @@ Os programas consistem em:
 
 O arquivo ep4.cpp contém uma implementação simplificada do jogo Pacman. Dado um arquivo .txt contendo um labirinto de dimensões ímpares (o labirinto pode ou não conter fantasmas e deve possuir ao menos 1 espaço em branco e 1 pacdot), o Pacman será posicionado no meio. A cada iteração, movemos os fantasmas e printamos o labirinto atualizado. Se não houver colisão entre os fantasma e o Pacman, é solicitado ao jogador que faça uma jogada. A jogada consiste em escolher uma nova direção para avançar com o Pacman e é definida por a - esquerda, d - direita, w - cima, s - baixo. Isso se repete até houver uma colisão (Game Over) ou o Pacman ter comida todos os pacdots (vence o jogo).
 
+COMO COMPILAR:
+Dentro do diretório contendo todos os arquivos acima, o Makefile deve ser utilizado para compilar o programa principal:
+- Para compilar o programa principal: make
+- Para gerar a documentação (presumindo que já exista um documento entitulado "Doxyfile" com os devidos parâmetros setados): make doc
+- Para apagar os arquivos gerados na compilação e documentação: make clean
+- Para rodar apenas os testes: make tests
+
 COMO EXECUTAR:
+Após chamar o comando make, digite no terminal o seguinte comando:
+
+./ep4 <nome do arquivo com labirinto>
+
+ATENÇÃO! Se o comando make tests for utilizado, o programa é executado pelo próprio Makefile.
 
 TESTES:
 
-lume@clair-de-lume:~/Documents/mac216/ep3$ ./testa 
+TEST(TesteFantasma, criaFantasmaCerto): verifica se um objeto do tipo Fantasma foi inicializado com os valores bases da classe.
+TEST(TestePacman, criaPacmanCerto): verifica se um objeto do tipo Pacman foi inicializado com os valores bases da classe.
+TEST(TestePacman, PacmanCome): verifica se o número de pontos de um objeto do tipo Pacman foi corretamente atualizado.
+TEST(TestePersonagem, movePersonagemCerto): verifica se um objeto do tipo Personagem executa sua movimentação corretamente.
+TEST(TestePersonagem, movePersonagemErro): verifica se um objeto do tipo Personagem executa sua movimentação corretamente (esperado erro).
 
 DEPENDÊNCIAS:
 Versão do bash: GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
