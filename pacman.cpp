@@ -82,3 +82,7 @@ int Pacman::getX(){
 int Pacman::getY(){
     return y;
 }
+
+char Pacman::getSprite(){
+	return sprite;
+}

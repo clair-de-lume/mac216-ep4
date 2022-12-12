@@ -113,6 +113,14 @@ class Pacman: public Personagem {
          * @return (int) A nova coluna do Pacman.
          */
         int getNovoY(char direcao, int borda, int lin, int col);
+		
+		/**
+         * @brief Função: getSprite
+         * Retorna o caractere que representa o sprite do Pacman.
+         * 
+         * @return (char) O caractere que representa o sprite do Pacman.
+         */
+		char getSprite();
 };
 
 #endif

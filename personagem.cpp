@@ -10,3 +10,11 @@ void Personagem::setPosicao(int x, int y){
     this->x = x;
     this->y = y;
 }
+
+int Personagem::getX(){
+    return x;
+}
+
+int Personagem::getY(){
+    return y;
+}

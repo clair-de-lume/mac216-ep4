@@ -47,6 +47,23 @@ class Personagem{
          * @param y (int) A coluna do labirinto em que o personagem está 
          */
         void setPosicao(int x, int y);
+		
+		
+        /**
+         * @brief Função: getX
+         * Retorna a linha em que o personagem está.
+         * 
+         * @return (int) A linha em que o personagem está.
+         */
+        int getX();
+
+        /**
+         * @brief Função: getY
+         * Retorna a coluna em que o personagem está.
+         * 
+         * @return (int) A coluna em que o personagem está.
+         */
+        int getY();
 };
 
 #endif
