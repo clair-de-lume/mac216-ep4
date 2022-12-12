@@ -58,26 +58,6 @@ int Fantasma::getNovoY(int direcao, int borda, int lin, int col){
     return novoY;
 }
 
-void Fantasma::anda(int direcao){
-    switch(direcao){
-        case 0: // esquerda
-            setPosicao(x, y-1);
-            break;
-        case 1: // direita
-            setPosicao(x, y+1);
-            break;
-        case 2: // cima
-            setPosicao(x+1, y);
-            break;
-        case 3: // baixo
-            setPosicao(x-1, y);
-            break;
-        default:
-            cout << "Direção inválida!" << endl;
-            break;
-    }
-}
-
 int Fantasma::getX(){
     return x;
 }

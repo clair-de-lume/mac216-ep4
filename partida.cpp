@@ -26,21 +26,6 @@ void Partida::getFantasmas(){
     }
 }
 
-void Partida::printaFantasmas(){
-    int i, x, y;
-    for(i=0; i < nFantasmas; i++){
-        x = fantasmas[i].getX();
-        y = fantasmas[i].getY();
-        cout << "Fantasma " << i+1 << " : Posicao (" << x << ", " << y << ")" << endl; 
-    }
-}
-
-void Partida::printaPacman(){
-    int x = pacman.getX();
-    int y = pacman.getY();
-    cout << "Pacman: Posicao (" << x << ", " << y << ")" << endl;
-}
-
 int Partida::colisao(){
     for(int i=0; i < nFantasmas; i++){
         if(fantasmas[i].getX() == pacman.getX() && fantasmas[i].getY() == pacman.getY()){

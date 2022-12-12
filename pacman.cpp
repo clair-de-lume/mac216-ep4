@@ -69,11 +69,6 @@ void Pacman::come(){
 
 void Pacman::morre(){
     status = 0;
-    cout << "Game Over! Pontos = " << pontos << endl;
-}
-
-void Pacman::vence(){
-    cout << "Congratulations! Pontos = " << pontos << endl;
 }
 
 int Pacman::checaStatus(){
