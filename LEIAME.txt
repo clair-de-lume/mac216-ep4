@@ -1,0 +1,25 @@
+AUTORA:
+Nome: Luísa Menezes da Costa
+NUSP: 12676491
+E-mail: luisa_menezes@usp.br
+
+DESCRIÇÃO:
+Os programas consistem em:
+- um arquivo .cpp contendo o jogo Pacman
+- 6 classes em C++, separadas por .h e .cpp, utilizadas no programa principal
+- um arquivo Make utilizado para compilar o jogo
+
+O arquivo ep4.cpp contém uma implementação simplificada do jogo Pacman. Dado um arquivo .txt contendo um labirinto de dimensões ímpares (o labirinto pode ou não conter fantasmas e deve possuir ao menos 1 espaço em branco e 1 pacdot), o Pacman será posicionado no meio. A cada iteração, movemos os fantasmas e printamos o labirinto atualizado. Se não houver colisão entre os fantasma e o Pacman, é solicitado ao jogador que faça uma jogada. A jogada consiste em escolher uma nova direção para avançar com o Pacman e é definida por a - esquerda, d - direita, w - cima, s - baixo. Isso se repete até houver uma colisão (Game Over) ou o Pacman ter comida todos os pacdots (vence o jogo).
+
+COMO EXECUTAR:
+
+TESTES:
+
+lume@clair-de-lume:~/Documents/mac216/ep3$ ./testa 
+
+DEPENDÊNCIAS:
+Versão do bash: GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+Versão do g++: g++.exe (Rev2, Built by MSYS2 project) 12.1.0
+Versão do Doxygen: 1.9.1
+Versão do SO: Ubuntu 22.04.1 LTS
+Versão do kernel Linux: Linux 5.15.0-47-generic x86_64
